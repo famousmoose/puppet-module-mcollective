@@ -1,9 +1,8 @@
 
 class mcollective::install::debian {
 
-    package { "stomp":
-        provider => gem,
-        #ensure => "1.1",
+    package { "libstomp-ruby1.8":
+        ensure => "1.0.4-3~bpo50+1",
     }
 
     package { "mcollective":
